@@ -32,13 +32,16 @@ Epics are **large feature areas** that group multiple Stories. They represent a 
 
 | Rule | Detail |
 |------|--------|
+| **Title** | `Epic: [Feature Area]` — use a noun phrase |
 | **Heading** | Always starts with `## Epic` |
 | **Description** | 1-2 sentences. What is this feature area and why does it matter? |
-| **Stories list** | Checkbox list (`- [ ]`) of all child Stories. Updated as Stories are added |
+| **Stories list** | Checkbox list of all child Stories. Updated as Stories are added |
 | **No implementation detail** | Epics describe *what*, never *how* |
 | **Labels** | Must have `epic` label |
 
 ### Example
+
+> **Title:** `Epic: Infrastructure & DevOps`
 
 ```markdown
 ## Epic
@@ -75,6 +78,7 @@ As a [role], I want [capability], so that [benefit].
 
 | Rule | Detail |
 |------|--------|
+| **Title** | `Story: [Deliverable]` — start with a verb (Set up, Implement, Add, Build) |
 | **Heading** | Always starts with `## Story` |
 | **User story** | Must follow "As a... I want... so that..." format |
 | **Acceptance Criteria** | Bullet list (not checkboxes). Each criterion is testable and specific |
@@ -82,6 +86,8 @@ As a [role], I want [capability], so that [benefit].
 | **Labels** | Must have `story` label |
 
 ### Example
+
+> **Title:** `Story: Set up GitHub Actions CI pipeline`
 
 ```markdown
 ## Story
@@ -116,13 +122,16 @@ or configurations. Should be actionable without further clarification.]
 
 | Rule | Detail |
 |------|--------|
+| **Title** | `Task: [Action]` — start with a verb (Create, Configure, Implement, Write, Add) |
 | **Heading** | Always starts with `## Task` |
 | **Description** | Concrete and specific. Mention file names, tools, commands. A developer should be able to start working immediately after reading this |
-| **Estimate** | Always present. Format: `## Estimate: ~Xh`. Tasks should be 1-3h. If > 3h, split into multiple tasks |
+| **Estimate** | Always present. Format: `## Estimate: ~Xh`. Tasks should be 1-3h. If more than 3h, split into multiple tasks |
 | **No user-story format** | Tasks are technical, not user-facing |
 | **Labels** | Must have `task` label |
 
 ### Example
+
+> **Title:** `Task: Configure GitHub Actions workflow for .NET build`
 
 ```markdown
 ## Task
@@ -137,16 +146,17 @@ sets up .NET SDK, restores packages, and builds the solution.
 
 ## 4. Title Conventions
 
-All issue titles MUST be prefixed with their Item Type:
+All issue titles MUST be prefixed with their Item Type using **consistent casing**:
 
 | Type | Title Format | Example |
 |------|-------------|---------|
-| Epic | `EPIC: [Feature Area]` | `EPIC: Infrastructure & DevOps` |
+| Epic | `Epic: [Feature Area]` | `Epic: Infrastructure & DevOps` |
 | Story | `Story: [Deliverable]` | `Story: Set up GitHub Actions CI pipeline` |
 | Task | `Task: [Action]` | `Task: Configure GitHub Actions workflow for .NET build` |
 
 ### Title Rules
 
+- **Consistent casing** — always `Epic:`, `Story:`, `Task:` (title case, never ALL CAPS)
 - **Max 70 characters** (excluding prefix)
 - **Start with a verb** for Stories and Tasks (Set up, Create, Configure, Implement, Add)
 - **Use nouns** for Epics (Infrastructure, Auth Context, Memory Module)
@@ -157,7 +167,7 @@ All issue titles MUST be prefixed with their Item Type:
 ## 5. Hierarchy Rules
 
 ```
-EPIC
+Epic
  └── Story (sub-issue of Epic)
       └── Task (sub-issue of Story)
 ```
@@ -190,13 +200,14 @@ Every issue on the project board must have ALL of these fields set:
 
 Before submitting any issue, verify:
 
-- [ ] Title follows the prefix convention (`EPIC:` / `Story:` / `Task:`)
+- [ ] Title follows the prefix convention (`Epic:` / `Story:` / `Task:`)
+- [ ] Casing is consistent (title case prefix, never ALL CAPS)
 - [ ] Body uses the correct template for its type
 - [ ] Epics have a Stories checkbox list
 - [ ] Stories use "As a... I want... so that..." format
 - [ ] Stories have testable Acceptance Criteria
 - [ ] Tasks are concrete and actionable (mention files, tools, commands)
-- [ ] Tasks have an estimate
+- [ ] Tasks have an estimate of 1-3h
 - [ ] All project board fields are set
 - [ ] Sub-issue link is established (Story → Epic, Task → Story)
 - [ ] Correct labels are applied
