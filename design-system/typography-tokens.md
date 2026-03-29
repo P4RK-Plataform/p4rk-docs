@@ -1,11 +1,13 @@
 # P4RK Typography Tokens
 
 > Typography scale and font hierarchy for the P4RK platform.
-> Managed as Figma Text Styles in the **P4RK DS** file.
+> Managed as **Figma Text Styles** and **Figma Variables** (FLOAT tokens) in the **P4RK DS** file.
 
 ---
 
 ## Overview
+
+### Text Styles (16)
 
 | Category | Count | Description |
 |---|---|---|
@@ -15,6 +17,18 @@
 | Caption & Overline | 2 | Small descriptive and uppercase text |
 | Code | 2 | Monospace for technical content |
 | **Total** | **16** | |
+
+### Figma Variables (42)
+
+All numeric values are also available as FLOAT variables in the **"Typography"** collection (`VariableCollectionId:16:2`).
+
+| Group | Count | Description |
+|---|---|---|
+| `font-size/*` | 16 | Font sizes in px (h1 through code-small) |
+| `line-height/*` | 12 | Computed line heights in px |
+| `letter-spacing/*` | 10 | Letter spacing in px (-2 to +1.5) |
+| `font-weight/*` | 4 | Weight values: bold (700), semi-bold (600), medium (500), regular (400) |
+| **Total** | **42** | |
 
 ---
 

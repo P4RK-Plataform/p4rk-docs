@@ -6,7 +6,7 @@
     "figmaFile": "pJwPqZX9GycprKDfK3Ehec",
     "collections": ["Colors", "Text Styles"],
     "modes": ["Light", "Dark"],
-    "totalTokens": 77
+    "totalTokens": 119
   },
   "primitive": {
     "blue": {
@@ -107,30 +107,37 @@
       "code": { "family": "JetBrains Mono", "fallback": "'Fira Code', 'SF Mono', Consolas, monospace" }
     },
     "heading": {
-      "h1": { "size": 72, "weight": 700, "lineHeight": 1.1, "letterSpacing": -2, "font": "Inter", "style": "Bold" },
-      "h2": { "size": 48, "weight": 600, "lineHeight": 1.15, "letterSpacing": -1.5, "font": "Inter", "style": "Semi Bold" },
-      "h3": { "size": 36, "weight": 600, "lineHeight": 1.2, "letterSpacing": -1, "font": "Inter", "style": "Semi Bold" },
-      "h4": { "size": 28, "weight": 600, "lineHeight": 1.2, "letterSpacing": -0.5, "font": "Inter", "style": "Semi Bold" },
-      "h5": { "size": 24, "weight": 500, "lineHeight": 1.25, "letterSpacing": -0.3, "font": "Inter", "style": "Medium" },
-      "h6": { "size": 20, "weight": 500, "lineHeight": 1.3, "letterSpacing": -0.2, "font": "Inter", "style": "Medium" }
+      "h1": { "size": 72, "weight": 700, "lineHeight": 1.1, "lineHeightPx": 79.2, "letterSpacing": -2, "font": "Inter", "style": "Bold", "figmaVars": { "fontSize": "font-size/h1", "lineHeight": "line-height/h1", "letterSpacing": "letter-spacing/h1", "fontWeight": "font-weight/bold" } },
+      "h2": { "size": 48, "weight": 600, "lineHeight": 1.15, "lineHeightPx": 55.2, "letterSpacing": -1.5, "font": "Inter", "style": "Semi Bold", "figmaVars": { "fontSize": "font-size/h2", "lineHeight": "line-height/h2", "letterSpacing": "letter-spacing/h2", "fontWeight": "font-weight/semi-bold" } },
+      "h3": { "size": 36, "weight": 600, "lineHeight": 1.2, "lineHeightPx": 43.2, "letterSpacing": -1, "font": "Inter", "style": "Semi Bold", "figmaVars": { "fontSize": "font-size/h3", "lineHeight": "line-height/h3", "letterSpacing": "letter-spacing/h3", "fontWeight": "font-weight/semi-bold" } },
+      "h4": { "size": 28, "weight": 600, "lineHeight": 1.2, "lineHeightPx": 33.6, "letterSpacing": -0.5, "font": "Inter", "style": "Semi Bold", "figmaVars": { "fontSize": "font-size/h4", "lineHeight": "line-height/h4", "letterSpacing": "letter-spacing/h4", "fontWeight": "font-weight/semi-bold" } },
+      "h5": { "size": 24, "weight": 500, "lineHeight": 1.25, "lineHeightPx": 30, "letterSpacing": -0.3, "font": "Inter", "style": "Medium", "figmaVars": { "fontSize": "font-size/h5", "lineHeight": "line-height/h5", "letterSpacing": "letter-spacing/h5", "fontWeight": "font-weight/medium" } },
+      "h6": { "size": 20, "weight": 500, "lineHeight": 1.3, "lineHeightPx": 26, "letterSpacing": -0.2, "font": "Inter", "style": "Medium", "figmaVars": { "fontSize": "font-size/h6", "lineHeight": "line-height/h6", "letterSpacing": "letter-spacing/h6", "fontWeight": "font-weight/medium" } }
     },
     "body": {
-      "large": { "size": 18, "weight": 400, "lineHeight": 1.6, "letterSpacing": 0, "font": "Inter", "style": "Regular" },
-      "default": { "size": 16, "weight": 400, "lineHeight": 1.5, "letterSpacing": 0, "font": "Inter", "style": "Regular" },
-      "small": { "size": 14, "weight": 400, "lineHeight": 1.5, "letterSpacing": 0, "font": "Inter", "style": "Regular" }
+      "large": { "size": 18, "weight": 400, "lineHeight": 1.6, "lineHeightPx": 28.8, "letterSpacing": 0, "font": "Inter", "style": "Regular", "figmaVars": { "fontSize": "font-size/body-large", "lineHeight": "line-height/body-large", "letterSpacing": "letter-spacing/body", "fontWeight": "font-weight/regular" } },
+      "default": { "size": 16, "weight": 400, "lineHeight": 1.5, "lineHeightPx": 24, "letterSpacing": 0, "font": "Inter", "style": "Regular", "figmaVars": { "fontSize": "font-size/body", "lineHeight": "line-height/body", "letterSpacing": "letter-spacing/body", "fontWeight": "font-weight/regular" } },
+      "small": { "size": 14, "weight": 400, "lineHeight": 1.5, "lineHeightPx": 21, "letterSpacing": 0, "font": "Inter", "style": "Regular", "figmaVars": { "fontSize": "font-size/body-small", "lineHeight": "line-height/body-small", "letterSpacing": "letter-spacing/body", "fontWeight": "font-weight/regular" } }
     },
     "label": {
-      "large": { "size": 16, "weight": 500, "lineHeight": 1.4, "letterSpacing": 0, "font": "Inter", "style": "Medium" },
-      "default": { "size": 14, "weight": 500, "lineHeight": 1.4, "letterSpacing": 0, "font": "Inter", "style": "Medium" },
-      "small": { "size": 12, "weight": 500, "lineHeight": 1.4, "letterSpacing": 0.2, "font": "Inter", "style": "Medium" }
+      "large": { "size": 16, "weight": 500, "lineHeight": 1.4, "lineHeightPx": 22.4, "letterSpacing": 0, "font": "Inter", "style": "Medium", "figmaVars": { "fontSize": "font-size/label-large", "lineHeight": "line-height/label", "letterSpacing": "letter-spacing/body", "fontWeight": "font-weight/medium" } },
+      "default": { "size": 14, "weight": 500, "lineHeight": 1.4, "lineHeightPx": 19.6, "letterSpacing": 0, "font": "Inter", "style": "Medium", "figmaVars": { "fontSize": "font-size/label", "lineHeight": "line-height/label", "letterSpacing": "letter-spacing/body", "fontWeight": "font-weight/medium" } },
+      "small": { "size": 12, "weight": 500, "lineHeight": 1.4, "lineHeightPx": 16.8, "letterSpacing": 0.2, "font": "Inter", "style": "Medium", "figmaVars": { "fontSize": "font-size/label-small", "lineHeight": "line-height/caption", "letterSpacing": "letter-spacing/label-small", "fontWeight": "font-weight/medium" } }
     },
     "caption": {
-      "default": { "size": 12, "weight": 400, "lineHeight": 1.4, "letterSpacing": 0.1, "font": "Inter", "style": "Regular" },
-      "overline": { "size": 11, "weight": 500, "lineHeight": 1.4, "letterSpacing": 1.5, "font": "Inter", "style": "Medium" }
+      "default": { "size": 12, "weight": 400, "lineHeight": 1.4, "lineHeightPx": 16.8, "letterSpacing": 0.1, "font": "Inter", "style": "Regular", "figmaVars": { "fontSize": "font-size/caption", "lineHeight": "line-height/caption", "letterSpacing": "letter-spacing/caption", "fontWeight": "font-weight/regular" } },
+      "overline": { "size": 11, "weight": 500, "lineHeight": 1.4, "lineHeightPx": 15.4, "letterSpacing": 1.5, "font": "Inter", "style": "Medium", "figmaVars": { "fontSize": "font-size/overline", "lineHeight": "line-height/caption", "letterSpacing": "letter-spacing/overline", "fontWeight": "font-weight/medium" } }
     },
     "code": {
-      "default": { "size": 14, "weight": 400, "lineHeight": 1.6, "letterSpacing": 0, "font": "JetBrains Mono", "style": "Regular" },
-      "small": { "size": 12, "weight": 400, "lineHeight": 1.5, "letterSpacing": 0, "font": "JetBrains Mono", "style": "Regular" }
+      "default": { "size": 14, "weight": 400, "lineHeight": 1.6, "lineHeightPx": 22.4, "letterSpacing": 0, "font": "JetBrains Mono", "style": "Regular", "figmaVars": { "fontSize": "font-size/code", "lineHeight": "line-height/code", "letterSpacing": "letter-spacing/body", "fontWeight": "font-weight/regular" } },
+      "small": { "size": 12, "weight": 400, "lineHeight": 1.5, "lineHeightPx": 18, "letterSpacing": 0, "font": "JetBrains Mono", "style": "Regular", "figmaVars": { "fontSize": "font-size/code-small", "lineHeight": "line-height/code", "letterSpacing": "letter-spacing/body", "fontWeight": "font-weight/regular" } }
+    },
+    "figmaVariableCollection": {
+      "name": "Typography",
+      "id": "VariableCollectionId:16:2",
+      "mode": "Default",
+      "variableCount": 42,
+      "groups": ["font-size (16)", "line-height (12)", "letter-spacing (10)", "font-weight (4)"]
     }
   }
 }
