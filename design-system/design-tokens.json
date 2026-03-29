@@ -2,11 +2,11 @@
   "$schema": "https://design-tokens.github.io/community-group/format/",
   "meta": {
     "name": "P4RK Design Tokens",
-    "description": "Color tokens for the P4RK platform design system",
+    "description": "Color and typography tokens for the P4RK platform design system",
     "figmaFile": "pJwPqZX9GycprKDfK3Ehec",
-    "collection": "Colors",
+    "collections": ["Colors", "Text Styles"],
     "modes": ["Light", "Dark"],
-    "totalTokens": 61
+    "totalTokens": 77
   },
   "primitive": {
     "blue": {
@@ -99,6 +99,38 @@
       "error-text":   { "light": "#B91C1C", "dark": "#FCA5A5", "description": "Error alert text" },
       "info-bg":      { "light": "#DBEAFE", "dark": "#172554", "description": "Info alert background" },
       "info-text":    { "light": "#1D4ED8", "dark": "#93C5FD", "description": "Info alert text" }
+    }
+  },
+  "typography": {
+    "fonts": {
+      "primary": { "family": "Inter", "fallback": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" },
+      "code": { "family": "JetBrains Mono", "fallback": "'Fira Code', 'SF Mono', Consolas, monospace" }
+    },
+    "heading": {
+      "h1": { "size": 72, "weight": 700, "lineHeight": 1.1, "letterSpacing": -2, "font": "Inter", "style": "Bold" },
+      "h2": { "size": 48, "weight": 600, "lineHeight": 1.15, "letterSpacing": -1.5, "font": "Inter", "style": "Semi Bold" },
+      "h3": { "size": 36, "weight": 600, "lineHeight": 1.2, "letterSpacing": -1, "font": "Inter", "style": "Semi Bold" },
+      "h4": { "size": 28, "weight": 600, "lineHeight": 1.2, "letterSpacing": -0.5, "font": "Inter", "style": "Semi Bold" },
+      "h5": { "size": 24, "weight": 500, "lineHeight": 1.25, "letterSpacing": -0.3, "font": "Inter", "style": "Medium" },
+      "h6": { "size": 20, "weight": 500, "lineHeight": 1.3, "letterSpacing": -0.2, "font": "Inter", "style": "Medium" }
+    },
+    "body": {
+      "large": { "size": 18, "weight": 400, "lineHeight": 1.6, "letterSpacing": 0, "font": "Inter", "style": "Regular" },
+      "default": { "size": 16, "weight": 400, "lineHeight": 1.5, "letterSpacing": 0, "font": "Inter", "style": "Regular" },
+      "small": { "size": 14, "weight": 400, "lineHeight": 1.5, "letterSpacing": 0, "font": "Inter", "style": "Regular" }
+    },
+    "label": {
+      "large": { "size": 16, "weight": 500, "lineHeight": 1.4, "letterSpacing": 0, "font": "Inter", "style": "Medium" },
+      "default": { "size": 14, "weight": 500, "lineHeight": 1.4, "letterSpacing": 0, "font": "Inter", "style": "Medium" },
+      "small": { "size": 12, "weight": 500, "lineHeight": 1.4, "letterSpacing": 0.2, "font": "Inter", "style": "Medium" }
+    },
+    "caption": {
+      "default": { "size": 12, "weight": 400, "lineHeight": 1.4, "letterSpacing": 0.1, "font": "Inter", "style": "Regular" },
+      "overline": { "size": 11, "weight": 500, "lineHeight": 1.4, "letterSpacing": 1.5, "font": "Inter", "style": "Medium" }
+    },
+    "code": {
+      "default": { "size": 14, "weight": 400, "lineHeight": 1.6, "letterSpacing": 0, "font": "JetBrains Mono", "style": "Regular" },
+      "small": { "size": 12, "weight": 400, "lineHeight": 1.5, "letterSpacing": 0, "font": "JetBrains Mono", "style": "Regular" }
     }
   }
 }
