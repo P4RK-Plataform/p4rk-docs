@@ -6,7 +6,7 @@
     "figmaFile": "pJwPqZX9GycprKDfK3Ehec",
     "collections": ["Colors", "Text Styles"],
     "modes": ["Light", "Dark"],
-    "totalTokens": 119
+    "totalTokens": 151
   },
   "primitive": {
     "blue": {
@@ -138,6 +138,50 @@
       "mode": "Default",
       "variableCount": 42,
       "groups": ["font-size (16)", "line-height (12)", "letter-spacing (10)", "font-weight (4)"]
+    }
+  },
+  "spacing": {
+    "scale": {
+      "2xs": { "value": 2, "description": "Hairline spacing, borders", "figmaVar": "space/2xs" },
+      "xs":  { "value": 4, "description": "Tight inner padding, icon gaps", "figmaVar": "space/xs" },
+      "sm":  { "value": 8, "description": "Default inner padding, small gaps", "figmaVar": "space/sm" },
+      "md":  { "value": 16, "description": "Standard component padding", "figmaVar": "space/md" },
+      "lg":  { "value": 24, "description": "Section inner padding, card padding", "figmaVar": "space/lg" },
+      "xl":  { "value": 32, "description": "Section gaps, large padding", "figmaVar": "space/xl" },
+      "2xl": { "value": 48, "description": "Major section spacing", "figmaVar": "space/2xl" },
+      "3xl": { "value": 64, "description": "Page section spacing", "figmaVar": "space/3xl" },
+      "4xl": { "value": 96, "description": "Hero/landing section spacing", "figmaVar": "space/4xl" },
+      "5xl": { "value": 128, "description": "Large hero padding", "figmaVar": "space/5xl" },
+      "6xl": { "value": 160, "description": "Maximum section spacing", "figmaVar": "space/6xl" }
+    },
+    "radius": {
+      "sm":   { "value": 4, "description": "Tags, chips, small elements", "figmaVar": "radius/sm" },
+      "md":   { "value": 8, "description": "Inputs, buttons, default radius", "figmaVar": "radius/md" },
+      "lg":   { "value": 12, "description": "Cards, modals", "figmaVar": "radius/lg" },
+      "xl":   { "value": 16, "description": "Large cards, hero sections", "figmaVar": "radius/xl" },
+      "2xl":  { "value": 24, "description": "Pills, floating elements", "figmaVar": "radius/2xl" },
+      "full": { "value": 9999, "description": "Circles, fully rounded", "figmaVar": "radius/full" }
+    },
+    "grid": {
+      "desktop": {
+        "width": 1440, "content": 1200, "columns": 12, "gutter": 24, "margin": 120,
+        "figmaVars": { "width": "grid/desktop-width", "content": "grid/desktop-content", "columns": "grid/desktop-columns", "gutter": "grid/desktop-gutter", "margin": "grid/desktop-margin" }
+      },
+      "tablet": {
+        "width": 768, "content": 720, "columns": 8, "gutter": 16, "margin": 24,
+        "figmaVars": { "width": "grid/tablet-width", "content": "grid/tablet-content", "columns": "grid/tablet-columns", "gutter": "grid/tablet-gutter", "margin": "grid/tablet-margin" }
+      },
+      "mobile": {
+        "width": 375, "content": 343, "columns": 4, "gutter": 12, "margin": 16,
+        "figmaVars": { "width": "grid/mobile-width", "content": "grid/mobile-content", "columns": "grid/mobile-columns", "gutter": "grid/mobile-gutter", "margin": "grid/mobile-margin" }
+      }
+    },
+    "figmaVariableCollection": {
+      "name": "Spacing",
+      "id": "VariableCollectionId:16:45",
+      "mode": "Default",
+      "variableCount": 32,
+      "groups": ["space (11)", "radius (6)", "grid (15)"]
     }
   }
 }
