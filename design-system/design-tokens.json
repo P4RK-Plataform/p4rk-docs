@@ -1,0 +1,104 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "meta": {
+    "name": "P4RK Design Tokens",
+    "description": "Color tokens for the P4RK platform design system",
+    "figmaFile": "pJwPqZX9GycprKDfK3Ehec",
+    "collection": "Colors",
+    "modes": ["Light", "Dark"],
+    "totalTokens": 61
+  },
+  "primitive": {
+    "blue": {
+      "900": { "light": "#1B4F72", "dark": "#D4E6F1" },
+      "700": { "light": "#2E86C1", "dark": "#85C1E9" },
+      "500": { "light": "#3498DB", "dark": "#3498DB" },
+      "300": { "light": "#85C1E9", "dark": "#2E86C1" },
+      "100": { "light": "#D4E6F1", "dark": "#1B4F72" },
+      "50":  { "light": "#EBF5FB", "dark": "#0D2737" }
+    },
+    "neutral": {
+      "black":    { "light": "#000000", "dark": "#FFFFFF" },
+      "gray-900": { "light": "#111827", "dark": "#F9FAFB" },
+      "gray-800": { "light": "#1F2937", "dark": "#F3F4F6" },
+      "gray-700": { "light": "#374151", "dark": "#E5E7EB" },
+      "gray-600": { "light": "#4B5563", "dark": "#D1D5DB" },
+      "gray-500": { "light": "#6B7280", "dark": "#9CA3AF" },
+      "gray-400": { "light": "#9CA3AF", "dark": "#6B7280" },
+      "gray-300": { "light": "#D1D5DB", "dark": "#4B5563" },
+      "gray-200": { "light": "#E5E7EB", "dark": "#374151" },
+      "gray-100": { "light": "#F3F4F6", "dark": "#1F2937" },
+      "gray-50":  { "light": "#F9FAFB", "dark": "#111827" },
+      "white":    { "light": "#FFFFFF", "dark": "#000000" }
+    },
+    "success": {
+      "900": { "light": "#14532D", "dark": "#BBF7D0" },
+      "700": { "light": "#15803D", "dark": "#86EFAC" },
+      "500": { "light": "#22C55E", "dark": "#22C55E" },
+      "300": { "light": "#86EFAC", "dark": "#15803D" },
+      "100": { "light": "#DCFCE7", "dark": "#052E16" }
+    },
+    "warning": {
+      "900": { "light": "#78350F", "dark": "#FDE68A" },
+      "700": { "light": "#B45309", "dark": "#FCD34D" },
+      "500": { "light": "#F59E0B", "dark": "#F59E0B" },
+      "300": { "light": "#FCD34D", "dark": "#B45309" },
+      "100": { "light": "#FEF3C7", "dark": "#451A03" }
+    },
+    "error": {
+      "900": { "light": "#7F1D1D", "dark": "#FECACA" },
+      "700": { "light": "#B91C1C", "dark": "#FCA5A5" },
+      "500": { "light": "#EF4444", "dark": "#EF4444" },
+      "300": { "light": "#FCA5A5", "dark": "#B91C1C" },
+      "100": { "light": "#FEE2E2", "dark": "#450A0A" }
+    },
+    "info": {
+      "900": { "light": "#1E3A5F", "dark": "#BFDBFE" },
+      "700": { "light": "#1D4ED8", "dark": "#93C5FD" },
+      "500": { "light": "#3B82F6", "dark": "#3B82F6" },
+      "300": { "light": "#93C5FD", "dark": "#1D4ED8" },
+      "100": { "light": "#DBEAFE", "dark": "#172554" }
+    }
+  },
+  "semantic": {
+    "background": {
+      "default":   { "light": "#FFFFFF", "dark": "#0A0A0A", "description": "Default page background" },
+      "secondary": { "light": "#F9FAFB", "dark": "#171717", "description": "Secondary/subtle background" }
+    },
+    "surface": {
+      "default": { "light": "#FFFFFF", "dark": "#1A1A1A", "description": "Card and elevated surfaces" },
+      "hover":   { "light": "#F3F4F6", "dark": "#262626", "description": "Surface hover state" }
+    },
+    "foreground": {
+      "default":   { "light": "#111827", "dark": "#F9FAFB", "description": "Primary text" },
+      "secondary": { "light": "#6B7280", "dark": "#9CA3AF", "description": "Secondary/muted text" },
+      "tertiary":  { "light": "#9CA3AF", "dark": "#6B7280", "description": "Placeholder text" },
+      "inverse":   { "light": "#FFFFFF", "dark": "#0A0A0A", "description": "Text on dark/accent backgrounds" }
+    },
+    "border": {
+      "default": { "light": "#E5E7EB", "dark": "#2E2E2E", "description": "Default border" },
+      "strong":  { "light": "#D1D5DB", "dark": "#404040", "description": "Focused/strong border" }
+    },
+    "accent": {
+      "default": { "light": "#1B4F72", "dark": "#2E86C1", "description": "Primary CTAs, links" },
+      "hover":   { "light": "#2E86C1", "dark": "#3498DB", "description": "Accent hover state" },
+      "muted":   { "light": "#D4E6F1", "dark": "#1B4F72", "description": "Subtle accent background" }
+    },
+    "muted": {
+      "default": { "light": "#F3F4F6", "dark": "#262626", "description": "Tags, badges, muted areas" }
+    },
+    "overlay": {
+      "default": { "light": "#00000080", "dark": "#00000099", "description": "Modal/dialog overlay" }
+    },
+    "feedback": {
+      "success-bg":   { "light": "#DCFCE7", "dark": "#052E16", "description": "Success alert background" },
+      "success-text": { "light": "#15803D", "dark": "#86EFAC", "description": "Success alert text" },
+      "warning-bg":   { "light": "#FEF3C7", "dark": "#451A03", "description": "Warning alert background" },
+      "warning-text": { "light": "#B45309", "dark": "#FCD34D", "description": "Warning alert text" },
+      "error-bg":     { "light": "#FEE2E2", "dark": "#450A0A", "description": "Error alert background" },
+      "error-text":   { "light": "#B91C1C", "dark": "#FCA5A5", "description": "Error alert text" },
+      "info-bg":      { "light": "#DBEAFE", "dark": "#172554", "description": "Info alert background" },
+      "info-text":    { "light": "#1D4ED8", "dark": "#93C5FD", "description": "Info alert text" }
+    }
+  }
+}
