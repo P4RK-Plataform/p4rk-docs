@@ -12,7 +12,8 @@
 | **Colors** | 61 | Variables (COLOR) | This file |
 | **Typography** | 42 + 16 styles | Variables (FLOAT) + Text Styles | [`typography-tokens.md`](./typography-tokens.md) |
 | **Spacing** | 32 | Variables (FLOAT) | [`spacing-tokens.md`](./spacing-tokens.md) |
-| **Total** | **151** | | |
+| **Shape & Effects** | 31 | Variables (FLOAT) | [`effects-tokens.md`](./effects-tokens.md) |
+| **Total** | **182** | | |
 
 **JSON source:** [`design-tokens.json`](./design-tokens.json)
 
@@ -199,4 +200,6 @@ Context-aware tokens that map to primitive colors. These are the tokens componen
 - **JSON tokens:** [`design-tokens.json`](./design-tokens.json)
 - **Typography tokens:** [`typography-tokens.md`](./typography-tokens.md)
 - **Spacing tokens:** [`spacing-tokens.md`](./spacing-tokens.md)
+- **Effects tokens:** [`effects-tokens.md`](./effects-tokens.md)
+- **Logo SVGs:** [`logos/`](./logos/)
 - **Design inspiration:** apple.com, linear.app, stripe.com, vercel.com

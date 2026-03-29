@@ -6,7 +6,7 @@
     "figmaFile": "pJwPqZX9GycprKDfK3Ehec",
     "collections": ["Colors", "Text Styles"],
     "modes": ["Light", "Dark"],
-    "totalTokens": 151
+    "totalTokens": 182
   },
   "primitive": {
     "blue": {
@@ -182,6 +182,44 @@
       "mode": "Default",
       "variableCount": 32,
       "groups": ["space (11)", "radius (6)", "grid (15)"]
+    }
+  },
+  "effects": {
+    "borderWidth": {
+      "thin":   { "value": 1, "description": "Default borders, dividers", "figmaVar": "border-width/thin" },
+      "medium": { "value": 2, "description": "Focused inputs, active states", "figmaVar": "border-width/medium" },
+      "thick":  { "value": 4, "description": "Heavy emphasis, progress bars", "figmaVar": "border-width/thick" }
+    },
+    "shadow": {
+      "sm": { "x": 0, "y": 1, "blur": 2, "spread": 0, "opacity": 0.05, "css": "0 1px 2px rgba(0,0,0,0.05)", "figmaVars": { "x": "shadow/sm-x", "y": "shadow/sm-y", "blur": "shadow/sm-blur", "spread": "shadow/sm-spread" } },
+      "md": { "x": 0, "y": 4, "blur": 6, "spread": -1, "opacity": 0.07, "css": "0 4px 6px -1px rgba(0,0,0,0.07)", "figmaVars": { "x": "shadow/md-x", "y": "shadow/md-y", "blur": "shadow/md-blur", "spread": "shadow/md-spread" } },
+      "lg": { "x": 0, "y": 10, "blur": 15, "spread": -3, "opacity": 0.1, "css": "0 10px 15px -3px rgba(0,0,0,0.1)", "figmaVars": { "x": "shadow/lg-x", "y": "shadow/lg-y", "blur": "shadow/lg-blur", "spread": "shadow/lg-spread" } },
+      "xl": { "x": 0, "y": 20, "blur": 25, "spread": -5, "opacity": 0.15, "css": "0 20px 25px -5px rgba(0,0,0,0.15)", "figmaVars": { "x": "shadow/xl-x", "y": "shadow/xl-y", "blur": "shadow/xl-blur", "spread": "shadow/xl-spread" } }
+    },
+    "opacity": {
+      "0":   { "value": 0, "figmaVar": "opacity/0" },
+      "25":  { "value": 0.25, "figmaVar": "opacity/25" },
+      "50":  { "value": 0.5, "figmaVar": "opacity/50" },
+      "75":  { "value": 0.75, "figmaVar": "opacity/75" },
+      "100": { "value": 1, "figmaVar": "opacity/100" }
+    },
+    "transition": {
+      "fast":   { "value": 150, "unit": "ms", "description": "Hover states, toggles", "figmaVar": "transition/fast" },
+      "normal": { "value": 300, "unit": "ms", "description": "Standard animations", "figmaVar": "transition/normal" },
+      "slow":   { "value": 500, "unit": "ms", "description": "Page transitions, modals", "figmaVar": "transition/slow" }
+    },
+    "zIndex": {
+      "dropdown": { "value": 1000, "description": "Dropdowns, popovers", "figmaVar": "z-index/dropdown" },
+      "sticky":   { "value": 1020, "description": "Sticky headers, navbars", "figmaVar": "z-index/sticky" },
+      "modal":    { "value": 1050, "description": "Modals, dialogs", "figmaVar": "z-index/modal" },
+      "toast":    { "value": 1080, "description": "Toast notifications", "figmaVar": "z-index/toast" }
+    },
+    "figmaVariableCollection": {
+      "name": "Shape & Effects",
+      "id": "VariableCollectionId:16:179",
+      "mode": "Default",
+      "variableCount": 31,
+      "groups": ["border-width (3)", "opacity (5)", "shadow (16)", "transition (3)", "z-index (4)"]
     }
   }
 }
