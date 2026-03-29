@@ -1,11 +1,24 @@
 # P4RK Design Tokens
 
-> Single source of truth for all color tokens used across the P4RK platform.
-> Managed as Figma Variables in the **P4RK DS** file with Light and Dark mode support.
+> Single source of truth for all design tokens used across the P4RK platform.
+> Managed as Figma Variables and Text Styles in the **P4RK DS** file.
 
 ---
 
-## Overview
+## Design System Overview
+
+| Collection | Tokens | Figma Type | Documentation |
+|---|---|---|---|
+| **Colors** | 61 | Variables (COLOR) | This file |
+| **Typography** | 42 + 16 styles | Variables (FLOAT) + Text Styles | [`typography-tokens.md`](./typography-tokens.md) |
+| **Spacing** | 32 | Variables (FLOAT) | [`spacing-tokens.md`](./spacing-tokens.md) |
+| **Total** | **151** | | |
+
+**JSON source:** [`design-tokens.json`](./design-tokens.json)
+
+---
+
+## Color Tokens Overview
 
 | Category | Count | Description |
 |---|---|---|
@@ -184,4 +197,6 @@ Context-aware tokens that map to primitive colors. These are the tokens componen
 
 - **Figma file:** [P4RK DS](https://www.figma.com/design/pJwPqZX9GycprKDfK3Ehec)
 - **JSON tokens:** [`design-tokens.json`](./design-tokens.json)
+- **Typography tokens:** [`typography-tokens.md`](./typography-tokens.md)
+- **Spacing tokens:** [`spacing-tokens.md`](./spacing-tokens.md)
 - **Design inspiration:** apple.com, linear.app, stripe.com, vercel.com
