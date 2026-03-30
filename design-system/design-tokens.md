@@ -9,12 +9,12 @@
 
 | Collection | Tokens | Figma Type | Documentation |
 |---|---|---|---|
-| **Colors** | 65 | Variables (COLOR) | This file |
+| **Colors** | 67 | Variables (COLOR) | This file |
 | **Typography** | 42 + 16 styles | Variables (FLOAT) + Text Styles | [`typography-tokens.md`](./typography-tokens.md) |
 | **Spacing** | 32 | Variables (FLOAT) | [`spacing-tokens.md`](./spacing-tokens.md) |
 | **Shape & Effects** | 31 | Variables (FLOAT) | [`effects-tokens.md`](./effects-tokens.md) |
-| **Components** | 72 | Variables (COLOR + FLOAT) | This file (Button + Form Input sections) |
-| **Total** | **258** | | |
+| **Components** | 76 | Variables (COLOR + FLOAT) | This file (Button + Form Input sections) |
+| **Total** | **248** | | |
 
 **JSON source:** [`design-tokens.json`](./design-tokens.json)
 
@@ -32,7 +32,8 @@
 | Error | 5 | Red feedback scale |
 | Info | 5 | Blue feedback scale |
 | Semantic Tokens | 23 | Context-aware tokens for UI elements |
-| **Total** | **65** | |
+| Shadow Colors | 2 | Shadow color tokens (sm-color, focus-color) |
+| **Total** | **67** | |
 
 ---
 
@@ -253,7 +254,7 @@ Component-level tokens for the button system. Stored in the **Components** Figma
 
 | Token | sm | md | lg |
 |---|---|---|---|
-| `button/{size}-height` | 32px | 40px | 48px |
+| `button/{size}-height` | 36px | 44px | 52px |
 | `button/{size}-padding-x` | 12px | 16px | 24px |
 | `button/{size}-padding-y` | 6px | 8px | 12px |
 | `button/{size}-font-size` | 14px | 16px | 16px |
@@ -284,11 +285,17 @@ All button properties in the Figma showcase frame are bound to variables — zer
 | Gap | `button/{size}-gap` (Components) |
 | Font size | `button/{size}-font-size` (Components) |
 | Corner radius | `radius/md` (Spacing) |
+| Height | `button/{size}-height` (Components) |
+| Shadow color | `shadow/sm-color` (Colors) |
+| Shadow offsets | `shadow/sm-x`, `shadow/sm-y`, `shadow/sm-blur`, `shadow/sm-spread` (Shape & Effects) |
+| Icon width/height | `button/{size}-icon-size` (Components) |
+| Line height | `line-height/*` (Typography) |
+| Letter spacing | `letter-spacing/*` (Typography) |
 | Stroke weight | `border-width/thin` (Shape & Effects) |
 
 ### Icon Buttons
 
-Square buttons using height as width. Available in all variants (Primary, Secondary/Outline, Ghost) and all sizes (sm=32x32, md=40x40, lg=48x48).
+Square buttons using height as width. Available in all variants (Primary, Secondary/Outline, Ghost) and all sizes (sm=36x36, md=44x44, lg=52x52).
 
 ### Buttons with Icons
 
@@ -366,9 +373,9 @@ All components support 5 states: **default**, **focus**, **error**, **success**,
 
 | Token | Value | Usage |
 |---|---|---|
-| `input/height-sm` | 32px | Small input height |
-| `input/height-md` | 40px | Medium input height (default) |
-| `input/height-lg` | 48px | Large input height |
+| `input/height-sm` | 36px | Small input height |
+| `input/height-md` | 44px | Medium input height (default) |
+| `input/height-lg` | 52px | Large input height |
 | `input/padding-x` | 12px | Horizontal padding |
 | `input/padding-y` | 10px | Vertical padding |
 | `input/font-size` | 14px | Input text font size |
@@ -382,6 +389,10 @@ All components support 5 states: **default**, **focus**, **error**, **success**,
 | `input/toggle-knob-size` | 20px | Toggle knob diameter |
 | `input/checkbox-size` | 20px | Checkbox/radio size |
 | `input/icon-size` | 16px | Trailing/leading icon size |
+| `input/close-icon-size` | 12px | Close/clear icon size in search bar |
+| `input/width-sm` | 140px | Small input width (date picker, compact fields) |
+| `input/width-md` | 170px | Medium input width (state showcase fields) |
+| `input/width-lg` | 220px | Large input width (full-size fields) |
 | `input/gap` | 8px | Gap between icon and text inside input |
 
 ### Shared Form Input Properties
@@ -411,6 +422,13 @@ All form input properties in the Figma showcase frame are bound to variables —
 | Gap (icon ↔ text) | `input/gap` (Components) |
 | Font size | `input/font-size`, `input/label-font-size`, `input/helper-font-size` (Components) |
 | Corner radius | `radius/md`, `radius/sm`, `radius/full` (Spacing) |
+| Height | `input/height-sm/md/lg` (Components) |
+| Width | `input/width-sm/md/lg` (Components) |
+| Shadow color | `shadow/sm-color`, `shadow/focus-color` (Colors) |
+| Shadow offsets | `shadow/sm-*` (Shape & Effects) |
+| Icon width/height | `input/icon-size`, `input/close-icon-size` (Components) |
+| Line height | `line-height/*` (Typography) |
+| Letter spacing | `letter-spacing/*` (Typography) |
 | Stroke weight | `border-width/thin`, `border-width/medium` (Shape & Effects) |
 
 ---

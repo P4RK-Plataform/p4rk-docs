@@ -4,9 +4,9 @@
     "name": "P4RK Design Tokens",
     "description": "Color and typography tokens for the P4RK platform design system",
     "figmaFile": "pJwPqZX9GycprKDfK3Ehec",
-    "collections": ["Colors", "Text Styles", "Components"],
+    "collections": ["Colors", "Typography", "Spacing", "Shape & Effects", "Components"],
     "modes": ["Light", "Dark"],
-    "totalTokens": 258
+    "totalTokens": 248
   },
   "primitive": {
     "blue": {
@@ -202,7 +202,9 @@
       "sm": { "x": 0, "y": 1, "blur": 2, "spread": 0, "opacity": 0.05, "css": "0 1px 2px rgba(0,0,0,0.05)", "figmaVars": { "x": "shadow/sm-x", "y": "shadow/sm-y", "blur": "shadow/sm-blur", "spread": "shadow/sm-spread" } },
       "md": { "x": 0, "y": 4, "blur": 6, "spread": -1, "opacity": 0.07, "css": "0 4px 6px -1px rgba(0,0,0,0.07)", "figmaVars": { "x": "shadow/md-x", "y": "shadow/md-y", "blur": "shadow/md-blur", "spread": "shadow/md-spread" } },
       "lg": { "x": 0, "y": 10, "blur": 15, "spread": -3, "opacity": 0.1, "css": "0 10px 15px -3px rgba(0,0,0,0.1)", "figmaVars": { "x": "shadow/lg-x", "y": "shadow/lg-y", "blur": "shadow/lg-blur", "spread": "shadow/lg-spread" } },
-      "xl": { "x": 0, "y": 20, "blur": 25, "spread": -5, "opacity": 0.15, "css": "0 20px 25px -5px rgba(0,0,0,0.15)", "figmaVars": { "x": "shadow/xl-x", "y": "shadow/xl-y", "blur": "shadow/xl-blur", "spread": "shadow/xl-spread" } }
+      "xl": { "x": 0, "y": 20, "blur": 25, "spread": -5, "opacity": 0.15, "css": "0 20px 25px -5px rgba(0,0,0,0.15)", "figmaVars": { "x": "shadow/xl-x", "y": "shadow/xl-y", "blur": "shadow/xl-blur", "spread": "shadow/xl-spread" } },
+      "sm-color": { "light": "#0000000D", "dark": "#0000001A", "description": "Shadow sm color (5% / 10% black)", "figmaVar": "shadow/sm-color" },
+      "focus-color": { "light": "#72BDE580", "dark": "#2E96D180", "description": "Focus ring shadow color (50% opacity accent)", "figmaVar": "shadow/focus-color" }
     },
     "opacity": {
       "0":   { "value": 0, "figmaVar": "opacity/0" },
@@ -227,7 +229,7 @@
       "id": "VariableCollectionId:16:179",
       "mode": "Default",
       "variableCount": 31,
-      "groups": ["border-width (3)", "opacity (5)", "shadow (16)", "transition (3)", "z-index (4)"]
+      "groups": ["border-width (3)", "opacity (5)", "shadow (16 FLOAT + 2 COLOR in Colors)", "transition (3)", "z-index (4)"]
     }
   },
   "components": {
@@ -254,7 +256,7 @@
       },
       "sizes": {
         "sm": {
-          "height": 32, "paddingX": 12, "paddingY": 6,
+          "height": 36, "paddingX": 12, "paddingY": 6,
           "fontSize": 14, "iconSize": 16, "gap": 6,
           "figmaVars": {
             "height": "button/sm-height", "paddingX": "button/sm-padding-x", "paddingY": "button/sm-padding-y",
@@ -262,7 +264,7 @@
           }
         },
         "md": {
-          "height": 40, "paddingX": 16, "paddingY": 8,
+          "height": 44, "paddingX": 16, "paddingY": 8,
           "fontSize": 16, "iconSize": 20, "gap": 8,
           "figmaVars": {
             "height": "button/md-height", "paddingX": "button/md-padding-x", "paddingY": "button/md-padding-y",
@@ -270,7 +272,7 @@
           }
         },
         "lg": {
-          "height": 48, "paddingX": 24, "paddingY": 12,
+          "height": 52, "paddingX": 24, "paddingY": 12,
           "fontSize": 16, "iconSize": 24, "gap": 8,
           "figmaVars": {
             "height": "button/lg-height", "paddingX": "button/lg-padding-x", "paddingY": "button/lg-padding-y",
@@ -294,7 +296,12 @@
         "gap": "button/{size}-gap FLOAT tokens from Components collection",
         "fontSize": "button/{size}-font-size FLOAT tokens from Components collection",
         "cornerRadius": "radius/md from Spacing collection",
-        "strokeWeight": "border-width/thin from Shape & Effects collection"
+        "strokeWeight": "border-width/thin from Shape & Effects collection",
+        "height": "button/{size}-height FLOAT tokens from Components collection",
+        "iconSize": "button/{size}-icon-size FLOAT tokens from Components collection",
+        "shadow": "shadow/sm-color (COLOR) from Colors, shadow/sm-* (FLOAT) from Shape & Effects",
+        "lineHeight": "line-height/* from Typography collection",
+        "letterSpacing": "letter-spacing/* from Typography collection"
       },
       "icons": {
         "note": "All button icons use swappable Figma component instances with internal layer name 'glyph'",
@@ -317,8 +324,8 @@
         "name": "Components",
         "id": "VariableCollectionId:34:1019",
         "modes": [{"name": "Light", "id": "34:2"}, {"name": "Dark", "id": "34:3"}],
-        "variableCount": 72,
-        "groups": ["button colors (18 COLOR)", "button sizes (18 FLOAT)", "input colors (19 COLOR)", "input sizes (17 FLOAT)"]
+        "variableCount": 76,
+        "groups": ["button colors (18 COLOR)", "button sizes (18 FLOAT)", "input colors (19 COLOR)", "input sizes (21 FLOAT)"]
       }
     },
     "formInput": {
@@ -344,9 +351,9 @@
         "checkbox-check":  { "light": "#FFFFFF", "dark": "#FFFFFF", "description": "Checkmark color" }
       },
       "sizes": {
-        "height-sm":          { "value": 32, "description": "Small input height", "figmaVar": "input/height-sm" },
-        "height-md":          { "value": 40, "description": "Medium input height (default)", "figmaVar": "input/height-md" },
-        "height-lg":          { "value": 48, "description": "Large input height", "figmaVar": "input/height-lg" },
+        "height-sm":          { "value": 36, "description": "Small input height", "figmaVar": "input/height-sm" },
+        "height-md":          { "value": 44, "description": "Medium input height (default)", "figmaVar": "input/height-md" },
+        "height-lg":          { "value": 52, "description": "Large input height", "figmaVar": "input/height-lg" },
         "padding-x":          { "value": 12, "description": "Horizontal padding", "figmaVar": "input/padding-x" },
         "padding-y":          { "value": 10, "description": "Vertical padding", "figmaVar": "input/padding-y" },
         "font-size":          { "value": 14, "description": "Input text font size", "figmaVar": "input/font-size" },
@@ -360,6 +367,10 @@
         "toggle-knob-size":   { "value": 20, "description": "Toggle knob diameter", "figmaVar": "input/toggle-knob-size" },
         "checkbox-size":      { "value": 20, "description": "Checkbox/radio size", "figmaVar": "input/checkbox-size" },
         "icon-size":          { "value": 16, "description": "Trailing/leading icon size", "figmaVar": "input/icon-size" },
+        "close-icon-size":    { "value": 12, "description": "Close/clear icon size in search bar", "figmaVar": "input/close-icon-size" },
+        "width-sm":           { "value": 140, "description": "Small input width (date picker, compact fields)", "figmaVar": "input/width-sm" },
+        "width-md":           { "value": 170, "description": "Medium input width (state showcase fields)", "figmaVar": "input/width-md" },
+        "width-lg":           { "value": 220, "description": "Large input width (full-size fields)", "figmaVar": "input/width-lg" },
         "gap":                { "value": 8, "description": "Gap between icon and text inside input", "figmaVar": "input/gap" }
       },
       "shared": {
@@ -382,7 +393,12 @@
         "gap": "input/gap FLOAT token from Components collection",
         "fontSize": "input/font-size, input/label-font-size, input/helper-font-size from Components collection",
         "cornerRadius": "radius/md (inputs), radius/sm (checkbox), radius/full (toggle) from Spacing collection",
-        "strokeWeight": "border-width/thin and border-width/medium from Shape & Effects collection"
+        "strokeWeight": "border-width/thin and border-width/medium from Shape & Effects collection",
+        "height": "input/height-sm/md/lg FLOAT tokens from Components collection",
+        "width": "input/width-sm/md/lg FLOAT tokens from Components collection",
+        "shadow": "shadow/sm-color, shadow/focus-color (COLOR) from Colors, shadow/sm-* (FLOAT) from Shape & Effects",
+        "lineHeight": "line-height/* from Typography collection",
+        "letterSpacing": "letter-spacing/* from Typography collection"
       },
       "components": ["text-input", "textarea", "select", "checkbox", "radio", "toggle-switch", "date-picker", "search-bar"],
       "states": ["default", "focus", "error", "success", "disabled"],
@@ -390,8 +406,8 @@
         "name": "Components",
         "id": "VariableCollectionId:34:1019",
         "modes": [{"name": "Light", "id": "34:2"}, {"name": "Dark", "id": "34:3"}],
-        "variableCount": 36,
-        "groups": ["input colors (19 COLOR)", "input sizes (17 FLOAT)"]
+        "variableCount": 40,
+        "groups": ["input colors (19 COLOR)", "input sizes (21 FLOAT)"]
       }
     }
   }

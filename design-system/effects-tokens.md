@@ -12,6 +12,7 @@
 | `border-width/*` | 3 | Border thickness tokens |
 | `opacity/*` | 5 | Opacity scale |
 | `shadow/*` | 16 | Drop shadow parameters (4 shadows x 4 values) |
+| `shadow/*-color` | 2 | Shadow color tokens (stored in **Colors** collection) |
 | `transition/*` | 3 | Animation durations |
 | `z-index/*` | 4 | Stacking order layers |
 | **Total** | **31** | |
@@ -78,6 +79,15 @@ Apple-inspired subtle shadows with increasing elevation.
 | Color | `rgba(0, 0, 0, 0.15)` |
 | **CSS** | `0 20px 25px -5px rgba(0,0,0,0.15)` |
 | **Usage** | Hero elements, featured cards |
+
+### Shadow Color Tokens
+
+These are COLOR-type variables stored in the **Colors** collection (not Shape & Effects) because they support Light/Dark mode switching.
+
+| Token | Light Mode | Dark Mode | Usage |
+|---|---|---|---|
+| `shadow/sm-color` | `#0000000D` (5% black) | `#0000001A` (10% black) | Default card/input shadow color |
+| `shadow/focus-color` | `#72BDE580` (50% blue-300) | `#2E96D180` (50% blue-500) | Focus ring glow color |
 
 ---
 
