@@ -193,7 +193,7 @@ Context-aware tokens that map to primitive colors. These are the tokens componen
 
 ## Button Component Tokens
 
-Component-level tokens for the button system. Stored in the **Components** Figma Variable collection (`VariableCollectionId:34:586`) with Light/Dark modes.
+Component-level tokens for the button system. Stored in the **Components** Figma Variable collection (`VariableCollectionId:34:1019`) with Light/Dark modes.
 
 ### Variants
 
