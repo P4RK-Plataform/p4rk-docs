@@ -13,8 +13,8 @@
 | **Typography** | 42 + 16 styles | Variables (FLOAT) + Text Styles | [`typography-tokens.md`](./typography-tokens.md) |
 | **Spacing** | 32 | Variables (FLOAT) | [`spacing-tokens.md`](./spacing-tokens.md) |
 | **Shape & Effects** | 31 | Variables (FLOAT) | [`effects-tokens.md`](./effects-tokens.md) |
-| **Components** | 71 | Variables (COLOR + FLOAT) | This file (Button + Form Input sections) |
-| **Total** | **257** | | |
+| **Components** | 72 | Variables (COLOR + FLOAT) | This file (Button + Form Input sections) |
+| **Total** | **258** | | |
 
 **JSON source:** [`design-tokens.json`](./design-tokens.json)
 
@@ -382,6 +382,7 @@ All components support 5 states: **default**, **focus**, **error**, **success**,
 | `input/toggle-knob-size` | 20px | Toggle knob diameter |
 | `input/checkbox-size` | 20px | Checkbox/radio size |
 | `input/icon-size` | 16px | Trailing/leading icon size |
+| `input/gap` | 8px | Gap between icon and text inside input |
 
 ### Shared Form Input Properties
 
@@ -407,6 +408,7 @@ All form input properties in the Figma showcase frame are bound to variables —
 | Text colors | `input/*` COLOR tokens (Components) |
 | Stroke colors | `input/*` COLOR tokens (Components) |
 | Padding (L/R/T/B) | `input/padding-x/y` (Components) |
+| Gap (icon ↔ text) | `input/gap` (Components) |
 | Font size | `input/font-size`, `input/label-font-size`, `input/helper-font-size` (Components) |
 | Corner radius | `radius/md`, `radius/sm`, `radius/full` (Spacing) |
 | Stroke weight | `border-width/thin`, `border-width/medium` (Shape & Effects) |

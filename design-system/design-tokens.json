@@ -6,7 +6,7 @@
     "figmaFile": "pJwPqZX9GycprKDfK3Ehec",
     "collections": ["Colors", "Text Styles", "Components"],
     "modes": ["Light", "Dark"],
-    "totalTokens": 257
+    "totalTokens": 258
   },
   "primitive": {
     "blue": {
@@ -317,8 +317,8 @@
         "name": "Components",
         "id": "VariableCollectionId:34:1019",
         "modes": [{"name": "Light", "id": "34:2"}, {"name": "Dark", "id": "34:3"}],
-        "variableCount": 71,
-        "groups": ["button colors (18 COLOR)", "button sizes (18 FLOAT)", "input colors (19 COLOR)", "input sizes (16 FLOAT)"]
+        "variableCount": 72,
+        "groups": ["button colors (18 COLOR)", "button sizes (18 FLOAT)", "input colors (19 COLOR)", "input sizes (17 FLOAT)"]
       }
     },
     "formInput": {
@@ -359,7 +359,8 @@
         "toggle-height":      { "value": 24, "description": "Toggle switch height", "figmaVar": "input/toggle-height" },
         "toggle-knob-size":   { "value": 20, "description": "Toggle knob diameter", "figmaVar": "input/toggle-knob-size" },
         "checkbox-size":      { "value": 20, "description": "Checkbox/radio size", "figmaVar": "input/checkbox-size" },
-        "icon-size":          { "value": 16, "description": "Trailing/leading icon size", "figmaVar": "input/icon-size" }
+        "icon-size":          { "value": 16, "description": "Trailing/leading icon size", "figmaVar": "input/icon-size" },
+        "gap":                { "value": 8, "description": "Gap between icon and text inside input", "figmaVar": "input/gap" }
       },
       "shared": {
         "borderRadius": { "ref": "radius/md", "value": 8, "collection": "Spacing", "description": "Input corner radius" },
@@ -378,6 +379,7 @@
         "strokes": "input/* COLOR tokens from Components collection",
         "textFills": "input/* COLOR tokens from Components collection",
         "padding": "input/padding-x and input/padding-y FLOAT tokens from Components collection",
+        "gap": "input/gap FLOAT token from Components collection",
         "fontSize": "input/font-size, input/label-font-size, input/helper-font-size from Components collection",
         "cornerRadius": "radius/md (inputs), radius/sm (checkbox), radius/full (toggle) from Spacing collection",
         "strokeWeight": "border-width/thin and border-width/medium from Shape & Effects collection"
@@ -388,8 +390,8 @@
         "name": "Components",
         "id": "VariableCollectionId:34:1019",
         "modes": [{"name": "Light", "id": "34:2"}, {"name": "Dark", "id": "34:3"}],
-        "variableCount": 35,
-        "groups": ["input colors (19 COLOR)", "input sizes (16 FLOAT)"]
+        "variableCount": 36,
+        "groups": ["input colors (19 COLOR)", "input sizes (17 FLOAT)"]
       }
     }
   }
