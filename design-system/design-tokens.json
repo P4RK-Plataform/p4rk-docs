@@ -286,8 +286,8 @@
       "states": ["default", "hover", "active", "disabled", "loading"],
       "figmaVariableCollection": {
         "name": "Components",
-        "id": "VariableCollectionId:34:586",
-        "modes": [{"name": "Light", "id": "34:0"}, {"name": "Dark", "id": "34:1"}],
+        "id": "VariableCollectionId:34:1019",
+        "modes": [{"name": "Light", "id": "34:2"}, {"name": "Dark", "id": "34:3"}],
         "variableCount": 36,
         "groups": ["button colors (18 COLOR)", "button sizes (18 FLOAT)"]
       }
