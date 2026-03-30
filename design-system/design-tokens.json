@@ -278,10 +278,24 @@
           }
         }
       },
-      "borderRadius": "radius/md (8px)",
-      "fontWeight": "font-weight/medium (500)",
-      "fontFamily": "Inter",
-      "transition": "transition/fast (150ms)",
+      "shared": {
+        "borderRadius": { "ref": "radius/md", "value": 8, "collection": "Spacing", "description": "All button corner radius" },
+        "borderWidth": { "ref": "border-width/thin", "value": 1, "collection": "Shape & Effects", "description": "Outline button stroke weight" },
+        "fontWeight": { "ref": "font-weight/medium", "value": 500, "collection": "Typography", "description": "All button font weight" },
+        "fontFamily": "Inter",
+        "transition": { "ref": "transition/fast", "value": 150, "unit": "ms", "collection": "Shape & Effects", "description": "Hover/state transition duration" }
+      },
+      "bindings": {
+        "note": "All button properties in Figma are bound to variables — zero hardcoded values",
+        "fills": "button/* COLOR tokens from Components collection",
+        "strokes": "button/* COLOR tokens from Components collection",
+        "textFills": "button/* COLOR tokens from Components collection",
+        "padding": "button/{size}-padding-x/y FLOAT tokens from Components collection",
+        "gap": "button/{size}-gap FLOAT tokens from Components collection",
+        "fontSize": "button/{size}-font-size FLOAT tokens from Components collection",
+        "cornerRadius": "radius/md from Spacing collection",
+        "strokeWeight": "border-width/thin from Shape & Effects collection"
+      },
       "variants": ["primary", "secondary", "ghost", "destructive"],
       "states": ["default", "hover", "active", "disabled", "loading"],
       "figmaVariableCollection": {

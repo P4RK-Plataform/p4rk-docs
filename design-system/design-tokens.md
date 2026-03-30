@@ -262,14 +262,29 @@ Component-level tokens for the button system. Stored in the **Components** Figma
 
 ### Shared Button Properties
 
-| Property | Token Reference | Value |
-|---|---|---|
-| Border radius | `radius/md` | 8px |
-| Font weight | `font-weight/medium` | 500 |
-| Font family | Inter | — |
-| Transition | `transition/fast` | 150ms |
-| Border width (outline) | `border-width/thin` | 1px |
-| Focus ring width | `border-width/medium` | 2px |
+| Property | Token Reference | Collection | Value |
+|---|---|---|---|
+| Border radius | `radius/md` | Spacing | 8px |
+| Border width (outline) | `border-width/thin` | Shape & Effects | 1px |
+| Font weight | `font-weight/medium` | Typography | 500 |
+| Font family | Inter | — | — |
+| Transition | `transition/fast` | Shape & Effects | 150ms |
+| Focus ring width | `border-width/medium` | Shape & Effects | 2px |
+
+### Figma Bindings
+
+All button properties in the Figma showcase frame are bound to variables — zero hardcoded values:
+
+| Property | Bound To |
+|---|---|
+| Fill colors | `button/*` COLOR tokens (Components) |
+| Text colors | `button/*` COLOR tokens (Components) |
+| Stroke colors | `button/*` COLOR tokens (Components) |
+| Padding (L/R/T/B) | `button/{size}-padding-x/y` (Components) |
+| Gap | `button/{size}-gap` (Components) |
+| Font size | `button/{size}-font-size` (Components) |
+| Corner radius | `radius/md` (Spacing) |
+| Stroke weight | `border-width/thin` (Shape & Effects) |
 
 ### Icon Buttons
 
