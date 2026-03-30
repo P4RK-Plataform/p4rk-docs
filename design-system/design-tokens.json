@@ -6,16 +6,24 @@
     "figmaFile": "pJwPqZX9GycprKDfK3Ehec",
     "collections": ["Colors", "Text Styles"],
     "modes": ["Light", "Dark"],
-    "totalTokens": 182
+    "totalTokens": 186
   },
   "primitive": {
     "blue": {
-      "900": { "light": "#1B4F72", "dark": "#D4E6F1" },
-      "700": { "light": "#2E86C1", "dark": "#85C1E9" },
-      "500": { "light": "#3498DB", "dark": "#3498DB" },
-      "300": { "light": "#85C1E9", "dark": "#2E86C1" },
-      "100": { "light": "#D4E6F1", "dark": "#1B4F72" },
-      "50":  { "light": "#EBF5FB", "dark": "#0D2737" }
+      "_pantone": "PANTONE 2154 C",
+      "900": { "light": "#004680", "dark": "#E1F0FA" },
+      "700": { "light": "#0A6DB5", "dark": "#72BDE5" },
+      "500": { "light": "#2E96D1", "dark": "#2E96D1" },
+      "300": { "light": "#72BDE5", "dark": "#0A6DB5" },
+      "100": { "light": "#BFE0F5", "dark": "#004680" },
+      "50":  { "light": "#E5F2FB", "dark": "#003459" }
+    },
+    "brand-gray": {
+      "_pantone": "PANTONE Cool Gray 6 C",
+      "700": { "light": "#A7A8AA", "dark": "#A7A8AA" },
+      "500": { "light": "#C4C5C6", "dark": "#787979" },
+      "300": { "light": "#DCDCDD", "dark": "#5A5B5C" },
+      "100": { "light": "#EFEFEF", "dark": "#3D3D3E" }
     },
     "neutral": {
       "black":    { "light": "#000000", "dark": "#FFFFFF" },
@@ -80,9 +88,9 @@
       "strong":  { "light": "#D1D5DB", "dark": "#404040", "description": "Focused/strong border" }
     },
     "accent": {
-      "default": { "light": "#1B4F72", "dark": "#2E86C1", "description": "Primary CTAs, links" },
-      "hover":   { "light": "#2E86C1", "dark": "#3498DB", "description": "Accent hover state" },
-      "muted":   { "light": "#D4E6F1", "dark": "#1B4F72", "description": "Subtle accent background" }
+      "default": { "light": "#004680", "dark": "#0A6DB5", "description": "Primary CTAs, links" },
+      "hover":   { "light": "#0A6DB5", "dark": "#2E96D1", "description": "Accent hover state" },
+      "muted":   { "light": "#BFE0F5", "dark": "#004680", "description": "Subtle accent background" }
     },
     "muted": {
       "default": { "light": "#F3F4F6", "dark": "#262626", "description": "Tags, badges, muted areas" }

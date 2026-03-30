@@ -9,11 +9,11 @@
 
 | Collection | Tokens | Figma Type | Documentation |
 |---|---|---|---|
-| **Colors** | 61 | Variables (COLOR) | This file |
+| **Colors** | 65 | Variables (COLOR) | This file |
 | **Typography** | 42 + 16 styles | Variables (FLOAT) + Text Styles | [`typography-tokens.md`](./typography-tokens.md) |
 | **Spacing** | 32 | Variables (FLOAT) | [`spacing-tokens.md`](./spacing-tokens.md) |
 | **Shape & Effects** | 31 | Variables (FLOAT) | [`effects-tokens.md`](./effects-tokens.md) |
-| **Total** | **182** | | |
+| **Total** | **186** | | |
 
 **JSON source:** [`design-tokens.json`](./design-tokens.json)
 
@@ -23,14 +23,15 @@
 
 | Category | Count | Description |
 |---|---|---|
-| Primary Blues | 6 | Brand colors anchored on P4RK blue |
+| Primary Blues | 6 | Brand colors anchored on PANTONE 2154 C (#004680) |
+| Brand Grays | 4 | Brand gray scale from PANTONE Cool Gray 6 C (#A7A8AA) |
 | Neutrals | 12 | Grayscale from black to white |
 | Success | 5 | Green feedback scale |
 | Warning | 5 | Amber feedback scale |
 | Error | 5 | Red feedback scale |
 | Info | 5 | Blue feedback scale |
 | Semantic Tokens | 23 | Context-aware tokens for UI elements |
-| **Total** | **61** | |
+| **Total** | **65** | |
 
 ---
 
@@ -42,18 +43,31 @@
 
 ---
 
-## Primary Blues
+## Primary Blues — PANTONE 2154 C
 
-Core brand palette derived from the P4RK identity.
+Core brand palette anchored on **PANTONE 2154 C** (`#004680`).
 
 | Token | Light Mode | Dark Mode | Usage |
 |---|---|---|---|
-| `primary/blue-900` | `#1B4F72` | `#D4E6F1` | Primary brand, CTAs, headers |
-| `primary/blue-700` | `#2E86C1` | `#85C1E9` | Links, hover states |
-| `primary/blue-500` | `#3498DB` | `#3498DB` | General accent |
-| `primary/blue-300` | `#85C1E9` | `#2E86C1` | Light accent, tags |
-| `primary/blue-100` | `#D4E6F1` | `#1B4F72` | Subtle backgrounds |
-| `primary/blue-50` | `#EBF5FB` | `#0D2737` | Very subtle tints |
+| `primary/blue-900` | `#004680` | `#E1F0FA` | Primary brand, CTAs, headers |
+| `primary/blue-700` | `#0A6DB5` | `#72BDE5` | Links, hover states |
+| `primary/blue-500` | `#2E96D1` | `#2E96D1` | General accent |
+| `primary/blue-300` | `#72BDE5` | `#0A6DB5` | Light accent, tags |
+| `primary/blue-100` | `#BFE0F5` | `#004680` | Subtle backgrounds |
+| `primary/blue-50` | `#E5F2FB` | `#003459` | Very subtle tints |
+
+---
+
+## Brand Grays — PANTONE Cool Gray 6 C
+
+Secondary brand color from **PANTONE Cool Gray 6 C** (`#A7A8AA`). Used for P, R, K letters in the logo and as a brand-specific neutral.
+
+| Token | Light Mode | Dark Mode | Usage |
+|---|---|---|---|
+| `primary/gray-700` | `#A7A8AA` | `#A7A8AA` | Brand gray, logo letters |
+| `primary/gray-500` | `#C4C5C6` | `#787979` | Lighter brand gray |
+| `primary/gray-300` | `#DCDCDD` | `#5A5B5C` | Subtle brand gray |
+| `primary/gray-100` | `#EFEFEF` | `#3D3D3E` | Background tint |
 
 ---
 
@@ -157,9 +171,9 @@ Context-aware tokens that map to primitive colors. These are the tokens componen
 
 | Token | Light Mode | Dark Mode | Usage |
 |---|---|---|---|
-| `semantic/accent` | `#1B4F72` | `#2E86C1` | Primary CTAs, links |
-| `semantic/accent-hover` | `#2E86C1` | `#3498DB` | Accent hover state |
-| `semantic/accent-muted` | `#D4E6F1` | `#1B4F72` | Subtle accent background |
+| `semantic/accent` | `#004680` | `#0A6DB5` | Primary CTAs, links |
+| `semantic/accent-hover` | `#0A6DB5` | `#2E96D1` | Accent hover state |
+| `semantic/accent-muted` | `#BFE0F5` | `#004680` | Subtle accent background |
 
 ### Feedback Semantics
 
