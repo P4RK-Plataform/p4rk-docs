@@ -6,7 +6,7 @@
     "figmaFile": "pJwPqZX9GycprKDfK3Ehec",
     "collections": ["Colors", "Text Styles", "Components"],
     "modes": ["Light", "Dark"],
-    "totalTokens": 222
+    "totalTokens": 257
   },
   "primitive": {
     "blue": {
@@ -317,8 +317,79 @@
         "name": "Components",
         "id": "VariableCollectionId:34:1019",
         "modes": [{"name": "Light", "id": "34:2"}, {"name": "Dark", "id": "34:3"}],
-        "variableCount": 36,
-        "groups": ["button colors (18 COLOR)", "button sizes (18 FLOAT)"]
+        "variableCount": 71,
+        "groups": ["button colors (18 COLOR)", "button sizes (18 FLOAT)", "input colors (19 COLOR)", "input sizes (16 FLOAT)"]
+      }
+    },
+    "formInput": {
+      "colors": {
+        "bg":              { "light": "#FFFFFF", "dark": "#1A1A1A", "description": "Input background" },
+        "bg-disabled":     { "light": "#F3F4F6", "dark": "#1F2937", "description": "Disabled input background" },
+        "border":          { "light": "#E5E7EB", "dark": "#2E2E2E", "description": "Default input border" },
+        "border-focus":    { "light": "#004680", "dark": "#0A6DB5", "description": "Focused input border" },
+        "border-error":    { "light": "#B91C1C", "dark": "#FCA5A5", "description": "Error input border" },
+        "border-success":  { "light": "#15803D", "dark": "#86EFAC", "description": "Success input border" },
+        "border-disabled": { "light": "#E5E7EB", "dark": "#374151", "description": "Disabled input border" },
+        "text":            { "light": "#111827", "dark": "#F9FAFB", "description": "Input value text" },
+        "text-placeholder":{ "light": "#6B7280", "dark": "#9CA3AF", "description": "Placeholder text" },
+        "text-disabled":   { "light": "#9CA3AF", "dark": "#6B7280", "description": "Disabled text" },
+        "label":           { "light": "#111827", "dark": "#F9FAFB", "description": "Field label text" },
+        "helper":          { "light": "#6B7280", "dark": "#9CA3AF", "description": "Helper text" },
+        "error-text":      { "light": "#B91C1C", "dark": "#FCA5A5", "description": "Error message text" },
+        "success-text":    { "light": "#15803D", "dark": "#86EFAC", "description": "Success message text" },
+        "toggle-bg":       { "light": "#D1D5DB", "dark": "#4B5563", "description": "Toggle off track" },
+        "toggle-bg-on":    { "light": "#004680", "dark": "#0A6DB5", "description": "Toggle on track" },
+        "toggle-knob":     { "light": "#FFFFFF", "dark": "#FFFFFF", "description": "Toggle knob" },
+        "checkbox-bg":     { "light": "#004680", "dark": "#0A6DB5", "description": "Checked checkbox/radio fill" },
+        "checkbox-check":  { "light": "#FFFFFF", "dark": "#FFFFFF", "description": "Checkmark color" }
+      },
+      "sizes": {
+        "height-sm":          { "value": 32, "description": "Small input height", "figmaVar": "input/height-sm" },
+        "height-md":          { "value": 40, "description": "Medium input height (default)", "figmaVar": "input/height-md" },
+        "height-lg":          { "value": 48, "description": "Large input height", "figmaVar": "input/height-lg" },
+        "padding-x":          { "value": 12, "description": "Horizontal padding", "figmaVar": "input/padding-x" },
+        "padding-y":          { "value": 10, "description": "Vertical padding", "figmaVar": "input/padding-y" },
+        "font-size":          { "value": 14, "description": "Input text font size", "figmaVar": "input/font-size" },
+        "label-font-size":    { "value": 14, "description": "Label font size", "figmaVar": "input/label-font-size" },
+        "helper-font-size":   { "value": 12, "description": "Helper text font size", "figmaVar": "input/helper-font-size" },
+        "label-gap":          { "value": 6, "description": "Gap between label and input", "figmaVar": "input/label-gap" },
+        "helper-gap":         { "value": 4, "description": "Gap between input and helper text", "figmaVar": "input/helper-gap" },
+        "textarea-min-height":{ "value": 120, "description": "Minimum textarea height", "figmaVar": "input/textarea-min-height" },
+        "toggle-width":       { "value": 44, "description": "Toggle switch width", "figmaVar": "input/toggle-width" },
+        "toggle-height":      { "value": 24, "description": "Toggle switch height", "figmaVar": "input/toggle-height" },
+        "toggle-knob-size":   { "value": 20, "description": "Toggle knob diameter", "figmaVar": "input/toggle-knob-size" },
+        "checkbox-size":      { "value": 20, "description": "Checkbox/radio size", "figmaVar": "input/checkbox-size" },
+        "icon-size":          { "value": 16, "description": "Trailing/leading icon size", "figmaVar": "input/icon-size" }
+      },
+      "shared": {
+        "borderRadius": { "ref": "radius/md", "value": 8, "collection": "Spacing", "description": "Input corner radius" },
+        "borderWidth": { "ref": "border-width/thin", "value": 1, "collection": "Shape & Effects", "description": "Default border width" },
+        "borderWidthFocus": { "ref": "border-width/medium", "value": 2, "collection": "Shape & Effects", "description": "Focus state border width" },
+        "checkboxRadius": { "ref": "radius/sm", "value": 4, "collection": "Spacing", "description": "Checkbox corner radius" },
+        "toggleRadius": { "ref": "radius/full", "value": 9999, "collection": "Spacing", "description": "Toggle track radius (pill)" },
+        "fontWeight": { "ref": "font-weight/regular", "value": 400, "collection": "Typography", "description": "Input text font weight" },
+        "labelFontWeight": { "ref": "font-weight/medium", "value": 500, "collection": "Typography", "description": "Label font weight" },
+        "fontFamily": "Inter",
+        "transition": { "ref": "transition/fast", "value": 150, "unit": "ms", "collection": "Shape & Effects", "description": "State transition duration" }
+      },
+      "bindings": {
+        "note": "All form input properties in Figma are bound to variables — zero hardcoded values",
+        "fills": "input/* COLOR tokens from Components collection",
+        "strokes": "input/* COLOR tokens from Components collection",
+        "textFills": "input/* COLOR tokens from Components collection",
+        "padding": "input/padding-x and input/padding-y FLOAT tokens from Components collection",
+        "fontSize": "input/font-size, input/label-font-size, input/helper-font-size from Components collection",
+        "cornerRadius": "radius/md (inputs), radius/sm (checkbox), radius/full (toggle) from Spacing collection",
+        "strokeWeight": "border-width/thin and border-width/medium from Shape & Effects collection"
+      },
+      "components": ["text-input", "textarea", "select", "checkbox", "radio", "toggle-switch", "date-picker", "search-bar"],
+      "states": ["default", "focus", "error", "success", "disabled"],
+      "figmaVariableCollection": {
+        "name": "Components",
+        "id": "VariableCollectionId:34:1019",
+        "modes": [{"name": "Light", "id": "34:2"}, {"name": "Dark", "id": "34:3"}],
+        "variableCount": 35,
+        "groups": ["input colors (19 COLOR)", "input sizes (16 FLOAT)"]
       }
     }
   }

@@ -13,8 +13,8 @@
 | **Typography** | 42 + 16 styles | Variables (FLOAT) + Text Styles | [`typography-tokens.md`](./typography-tokens.md) |
 | **Spacing** | 32 | Variables (FLOAT) | [`spacing-tokens.md`](./spacing-tokens.md) |
 | **Shape & Effects** | 31 | Variables (FLOAT) | [`effects-tokens.md`](./effects-tokens.md) |
-| **Components** | 36 | Variables (COLOR + FLOAT) | This file (Button section) |
-| **Total** | **222** | | |
+| **Components** | 71 | Variables (COLOR + FLOAT) | This file (Button + Form Input sections) |
+| **Total** | **257** | | |
 
 **JSON source:** [`design-tokens.json`](./design-tokens.json)
 
@@ -314,6 +314,102 @@ All icons in buttons use **component instances** from the `Icon Placeholders` se
 3. Color token bindings are preserved automatically
 
 **When importing a new icon library:** Replace the content inside each `icon/*` master component, and every instance across the file updates automatically.
+
+---
+
+## Form Input Component Tokens
+
+Component-level tokens for the form input system. Stored in the **Components** Figma Variable collection (`VariableCollectionId:34:1019`) with Light/Dark modes.
+
+### Components
+
+| Component | Description | Usage |
+|---|---|---|
+| **Text Input** | Single-line text field | Email, name, URL fields |
+| **Textarea** | Multi-line text field | Messages, descriptions, comments |
+| **Select / Dropdown** | Dropdown selector with chevron | Country, category selection |
+| **Checkbox** | Square toggle with checkmark | Terms acceptance, multi-select options |
+| **Radio Buttons** | Circular single-select | Exclusive option groups |
+| **Toggle Switch** | Slide toggle with knob | On/off settings, feature flags |
+| **Date Picker** | Date input with calendar icon | Start/end dates, scheduling |
+| **Search Bar** | Input with search icon | Global search, filtering |
+
+### States
+
+All components support 5 states: **default**, **focus**, **error**, **success**, **disabled**.
+
+### Form Input Color Tokens
+
+| Token | Light Mode | Dark Mode | Usage |
+|---|---|---|---|
+| `input/bg` | `#FFFFFF` | `#1A1A1A` | Input background |
+| `input/bg-disabled` | `#F3F4F6` | `#1F2937` | Disabled input background |
+| `input/border` | `#E5E7EB` | `#2E2E2E` | Default border |
+| `input/border-focus` | `#004680` | `#0A6DB5` | Focused border |
+| `input/border-error` | `#B91C1C` | `#FCA5A5` | Error border |
+| `input/border-success` | `#15803D` | `#86EFAC` | Success border |
+| `input/border-disabled` | `#E5E7EB` | `#374151` | Disabled border |
+| `input/text` | `#111827` | `#F9FAFB` | Input value text |
+| `input/text-placeholder` | `#6B7280` | `#9CA3AF` | Placeholder text |
+| `input/text-disabled` | `#9CA3AF` | `#6B7280` | Disabled text |
+| `input/label` | `#111827` | `#F9FAFB` | Field label |
+| `input/helper` | `#6B7280` | `#9CA3AF` | Helper text |
+| `input/error-text` | `#B91C1C` | `#FCA5A5` | Error message |
+| `input/success-text` | `#15803D` | `#86EFAC` | Success message |
+| `input/toggle-bg` | `#D1D5DB` | `#4B5563` | Toggle off track |
+| `input/toggle-bg-on` | `#004680` | `#0A6DB5` | Toggle on track |
+| `input/toggle-knob` | `#FFFFFF` | `#FFFFFF` | Toggle knob |
+| `input/checkbox-bg` | `#004680` | `#0A6DB5` | Checked checkbox/radio |
+| `input/checkbox-check` | `#FFFFFF` | `#FFFFFF` | Checkmark color |
+
+### Form Input Size Tokens
+
+| Token | Value | Usage |
+|---|---|---|
+| `input/height-sm` | 32px | Small input height |
+| `input/height-md` | 40px | Medium input height (default) |
+| `input/height-lg` | 48px | Large input height |
+| `input/padding-x` | 12px | Horizontal padding |
+| `input/padding-y` | 10px | Vertical padding |
+| `input/font-size` | 14px | Input text font size |
+| `input/label-font-size` | 14px | Label font size |
+| `input/helper-font-size` | 12px | Helper/error text font size |
+| `input/label-gap` | 6px | Gap between label and input |
+| `input/helper-gap` | 4px | Gap between input and helper |
+| `input/textarea-min-height` | 120px | Minimum textarea height |
+| `input/toggle-width` | 44px | Toggle switch width |
+| `input/toggle-height` | 24px | Toggle switch height |
+| `input/toggle-knob-size` | 20px | Toggle knob diameter |
+| `input/checkbox-size` | 20px | Checkbox/radio size |
+| `input/icon-size` | 16px | Trailing/leading icon size |
+
+### Shared Form Input Properties
+
+| Property | Token Reference | Collection | Value |
+|---|---|---|---|
+| Border radius | `radius/md` | Spacing | 8px |
+| Border width (default) | `border-width/thin` | Shape & Effects | 1px |
+| Border width (focus) | `border-width/medium` | Shape & Effects | 2px |
+| Checkbox radius | `radius/sm` | Spacing | 4px |
+| Toggle radius | `radius/full` | Spacing | 9999px |
+| Font weight (input) | `font-weight/regular` | Typography | 400 |
+| Font weight (label) | `font-weight/medium` | Typography | 500 |
+| Font family | Inter | — | — |
+| Transition | `transition/fast` | Shape & Effects | 150ms |
+
+### Figma Bindings
+
+All form input properties in the Figma showcase frame are bound to variables — zero hardcoded values:
+
+| Property | Bound To |
+|---|---|
+| Fill colors | `input/*` COLOR tokens (Components) |
+| Text colors | `input/*` COLOR tokens (Components) |
+| Stroke colors | `input/*` COLOR tokens (Components) |
+| Padding (L/R/T/B) | `input/padding-x/y` (Components) |
+| Font size | `input/font-size`, `input/label-font-size`, `input/helper-font-size` (Components) |
+| Corner radius | `radius/md`, `radius/sm`, `radius/full` (Spacing) |
+| Stroke weight | `border-width/thin`, `border-width/medium` (Shape & Effects) |
 
 ---
 
