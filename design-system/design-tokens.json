@@ -4,9 +4,9 @@
     "name": "P4RK Design Tokens",
     "description": "Color and typography tokens for the P4RK platform design system",
     "figmaFile": "pJwPqZX9GycprKDfK3Ehec",
-    "collections": ["Colors", "Text Styles"],
+    "collections": ["Colors", "Text Styles", "Components"],
     "modes": ["Light", "Dark"],
-    "totalTokens": 186
+    "totalTokens": 222
   },
   "primitive": {
     "blue": {
@@ -228,6 +228,69 @@
       "mode": "Default",
       "variableCount": 31,
       "groups": ["border-width (3)", "opacity (5)", "shadow (16)", "transition (3)", "z-index (4)"]
+    }
+  },
+  "components": {
+    "button": {
+      "colors": {
+        "primary-bg":            { "light": "#004680", "dark": "#0A6DB5", "description": "Primary button background" },
+        "primary-bg-hover":      { "light": "#0A6DB5", "dark": "#2E96D1", "description": "Primary button hover background" },
+        "primary-bg-active":     { "light": "#003459", "dark": "#004680", "description": "Primary button active/pressed background" },
+        "primary-text":          { "light": "#FFFFFF", "dark": "#FFFFFF", "description": "Primary button text color" },
+        "secondary-bg":          { "light": "#FFFFFF", "dark": "#0A0A0A", "description": "Secondary button background" },
+        "secondary-bg-hover":    { "light": "#E5F2FB", "dark": "#003459", "description": "Secondary button hover background" },
+        "secondary-border":      { "light": "#004680", "dark": "#0A6DB5", "description": "Secondary button border color" },
+        "secondary-text":        { "light": "#004680", "dark": "#0A6DB5", "description": "Secondary button text color" },
+        "ghost-bg-hover":        { "light": "#F3F4F6", "dark": "#1F2937", "description": "Ghost button hover background" },
+        "ghost-text":            { "light": "#111827", "dark": "#F9FAFB", "description": "Ghost button text color" },
+        "destructive-bg":        { "light": "#B91C1C", "dark": "#B91C1C", "description": "Destructive button background" },
+        "destructive-bg-hover":  { "light": "#7F1D1D", "dark": "#EF4444", "description": "Destructive button hover background" },
+        "destructive-bg-active": { "light": "#7F1D1D", "dark": "#B91C1C", "description": "Destructive button active/pressed background" },
+        "destructive-text":      { "light": "#FFFFFF", "dark": "#FFFFFF", "description": "Destructive button text color" },
+        "disabled-bg":           { "light": "#F3F4F6", "dark": "#1F2937", "description": "Disabled button background" },
+        "disabled-text":         { "light": "#9CA3AF", "dark": "#6B7280", "description": "Disabled button text color" },
+        "disabled-border":       { "light": "#E5E7EB", "dark": "#374151", "description": "Disabled button border color" },
+        "focus-ring":            { "light": "#72BDE5", "dark": "#2E96D1", "description": "Button focus ring color" }
+      },
+      "sizes": {
+        "sm": {
+          "height": 32, "paddingX": 12, "paddingY": 6,
+          "fontSize": 14, "iconSize": 16, "gap": 6,
+          "figmaVars": {
+            "height": "button/sm-height", "paddingX": "button/sm-padding-x", "paddingY": "button/sm-padding-y",
+            "fontSize": "button/sm-font-size", "iconSize": "button/sm-icon-size", "gap": "button/sm-gap"
+          }
+        },
+        "md": {
+          "height": 40, "paddingX": 16, "paddingY": 8,
+          "fontSize": 16, "iconSize": 20, "gap": 8,
+          "figmaVars": {
+            "height": "button/md-height", "paddingX": "button/md-padding-x", "paddingY": "button/md-padding-y",
+            "fontSize": "button/md-font-size", "iconSize": "button/md-icon-size", "gap": "button/md-gap"
+          }
+        },
+        "lg": {
+          "height": 48, "paddingX": 24, "paddingY": 12,
+          "fontSize": 16, "iconSize": 24, "gap": 8,
+          "figmaVars": {
+            "height": "button/lg-height", "paddingX": "button/lg-padding-x", "paddingY": "button/lg-padding-y",
+            "fontSize": "button/lg-font-size", "iconSize": "button/lg-icon-size", "gap": "button/lg-gap"
+          }
+        }
+      },
+      "borderRadius": "radius/md (8px)",
+      "fontWeight": "font-weight/medium (500)",
+      "fontFamily": "Inter",
+      "transition": "transition/fast (150ms)",
+      "variants": ["primary", "secondary", "ghost", "destructive"],
+      "states": ["default", "hover", "active", "disabled", "loading"],
+      "figmaVariableCollection": {
+        "name": "Components",
+        "id": "VariableCollectionId:34:586",
+        "modes": [{"name": "Light", "id": "34:0"}, {"name": "Dark", "id": "34:1"}],
+        "variableCount": 36,
+        "groups": ["button colors (18 COLOR)", "button sizes (18 FLOAT)"]
+      }
     }
   }
 }

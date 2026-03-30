@@ -13,7 +13,8 @@
 | **Typography** | 42 + 16 styles | Variables (FLOAT) + Text Styles | [`typography-tokens.md`](./typography-tokens.md) |
 | **Spacing** | 32 | Variables (FLOAT) | [`spacing-tokens.md`](./spacing-tokens.md) |
 | **Shape & Effects** | 31 | Variables (FLOAT) | [`effects-tokens.md`](./effects-tokens.md) |
-| **Total** | **186** | | |
+| **Components** | 36 | Variables (COLOR + FLOAT) | This file (Button section) |
+| **Total** | **222** | | |
 
 **JSON source:** [`design-tokens.json`](./design-tokens.json)
 
@@ -187,6 +188,96 @@ Context-aware tokens that map to primitive colors. These are the tokens componen
 | `semantic/error-text` | `#B91C1C` | `#FCA5A5` | Error alert text |
 | `semantic/info-bg` | `#DBEAFE` | `#172554` | Info alert background |
 | `semantic/info-text` | `#1D4ED8` | `#93C5FD` | Info alert text |
+
+---
+
+## Button Component Tokens
+
+Component-level tokens for the button system. Stored in the **Components** Figma Variable collection (`VariableCollectionId:34:586`) with Light/Dark modes.
+
+### Variants
+
+| Variant | Description | Usage |
+|---|---|---|
+| **Primary** | Solid blue fill | Main CTAs, form submits |
+| **Secondary** | Outline with border | Secondary actions, cancel |
+| **Ghost** | Text only, no fill/border | Tertiary actions, inline links |
+| **Destructive** | Solid red fill | Delete, remove, danger actions |
+
+### Button Color Tokens
+
+#### Primary
+
+| Token | Light Mode | Dark Mode |
+|---|---|---|
+| `button/primary-bg` | `#004680` | `#0A6DB5` |
+| `button/primary-bg-hover` | `#0A6DB5` | `#2E96D1` |
+| `button/primary-bg-active` | `#003459` | `#004680` |
+| `button/primary-text` | `#FFFFFF` | `#FFFFFF` |
+
+#### Secondary (Outline)
+
+| Token | Light Mode | Dark Mode |
+|---|---|---|
+| `button/secondary-bg` | `#FFFFFF` | `#0A0A0A` |
+| `button/secondary-bg-hover` | `#E5F2FB` | `#003459` |
+| `button/secondary-border` | `#004680` | `#0A6DB5` |
+| `button/secondary-text` | `#004680` | `#0A6DB5` |
+
+#### Ghost
+
+| Token | Light Mode | Dark Mode |
+|---|---|---|
+| `button/ghost-bg-hover` | `#F3F4F6` | `#1F2937` |
+| `button/ghost-text` | `#111827` | `#F9FAFB` |
+
+#### Destructive
+
+| Token | Light Mode | Dark Mode |
+|---|---|---|
+| `button/destructive-bg` | `#B91C1C` | `#B91C1C` |
+| `button/destructive-bg-hover` | `#7F1D1D` | `#EF4444` |
+| `button/destructive-bg-active` | `#7F1D1D` | `#B91C1C` |
+| `button/destructive-text` | `#FFFFFF` | `#FFFFFF` |
+
+#### Shared
+
+| Token | Light Mode | Dark Mode | Usage |
+|---|---|---|---|
+| `button/disabled-bg` | `#F3F4F6` | `#1F2937` | All disabled buttons background |
+| `button/disabled-text` | `#9CA3AF` | `#6B7280` | All disabled buttons text |
+| `button/disabled-border` | `#E5E7EB` | `#374151` | Disabled outline button border |
+| `button/focus-ring` | `#72BDE5` | `#2E96D1` | Focus ring for all variants |
+
+### Button Size Tokens
+
+| Token | sm | md | lg |
+|---|---|---|---|
+| `button/{size}-height` | 32px | 40px | 48px |
+| `button/{size}-padding-x` | 12px | 16px | 24px |
+| `button/{size}-padding-y` | 6px | 8px | 12px |
+| `button/{size}-font-size` | 14px | 16px | 16px |
+| `button/{size}-icon-size` | 16px | 20px | 24px |
+| `button/{size}-gap` | 6px | 8px | 8px |
+
+### Shared Button Properties
+
+| Property | Token Reference | Value |
+|---|---|---|
+| Border radius | `radius/md` | 8px |
+| Font weight | `font-weight/medium` | 500 |
+| Font family | Inter | — |
+| Transition | `transition/fast` | 150ms |
+| Border width (outline) | `border-width/thin` | 1px |
+| Focus ring width | `border-width/medium` | 2px |
+
+### Icon Buttons
+
+Square buttons using height as width. Available in all variants (Primary, Secondary/Outline, Ghost) and all sizes (sm=32x32, md=40x40, lg=48x48).
+
+### Buttons with Icons
+
+Support leading and trailing icons with `gap` spacing between icon and text. Icon size follows the size token (`button/{size}-icon-size`).
 
 ---
 
