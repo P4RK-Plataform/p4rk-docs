@@ -296,6 +296,21 @@
         "cornerRadius": "radius/md from Spacing collection",
         "strokeWeight": "border-width/thin from Shape & Effects collection"
       },
+      "icons": {
+        "note": "All button icons use swappable Figma component instances with internal layer name 'glyph'",
+        "components": {
+          "arrow-right": { "id": "34:1057", "placeholder": "→", "usage": "Next, forward navigation" },
+          "arrow-left": { "id": "34:1059", "placeholder": "←", "usage": "Back, previous navigation" },
+          "plus": { "id": "34:1061", "placeholder": "+", "usage": "Create, add actions" },
+          "close": { "id": "34:1063", "placeholder": "✕", "usage": "Close, remove, delete" },
+          "download": { "id": "34:1065", "placeholder": "↓", "usage": "Download, export actions" }
+        },
+        "sizes": {
+          "sm": 16,
+          "md": 20,
+          "lg": 24
+        }
+      },
       "variants": ["primary", "secondary", "ghost", "destructive"],
       "states": ["default", "hover", "active", "disabled", "loading"],
       "figmaVariableCollection": {

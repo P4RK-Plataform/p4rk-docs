@@ -294,6 +294,27 @@ Square buttons using height as width. Available in all variants (Primary, Second
 
 Support leading and trailing icons with `gap` spacing between icon and text. Icon size follows the size token (`button/{size}-icon-size`).
 
+### Icon Components (Swappable)
+
+All icons in buttons use **component instances** from the `Icon Placeholders` set. This allows swapping the entire icon library without rebuilding buttons.
+
+| Component | Placeholder | Usage |
+|---|---|---|
+| `icon/arrow-right` | → | Next, forward navigation |
+| `icon/arrow-left` | ← | Back, previous navigation |
+| `icon/plus` | + | Create, add actions |
+| `icon/close` | ✕ | Close, remove, delete |
+| `icon/download` | ↓ | Download, export actions |
+
+**Internal layer name:** All icon components use `glyph` as the internal text layer name. This ensures color overrides (token bindings) are preserved when swapping instances.
+
+**How to swap icons:**
+1. Double-click into a button to select the icon instance
+2. Right-click → "Swap instance" → choose from your icon library
+3. Color token bindings are preserved automatically
+
+**When importing a new icon library:** Replace the content inside each `icon/*` master component, and every instance across the file updates automatically.
+
 ---
 
 ## Usage Guidelines
